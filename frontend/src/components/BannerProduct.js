@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import image1 from '../assest/banner/1.png'
 import image2 from '../assest/banner/2.png'
 import image3 from '../assest/banner/3.png'
+import image4 from '../assest/banner/4.png'
 
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
@@ -12,7 +13,8 @@ const BannerProduct = () => {
     const desktopImages = [
         image1,
         image2,
-        image3
+        image3,
+        image4
     ]
 
     const nextImage = () => {
