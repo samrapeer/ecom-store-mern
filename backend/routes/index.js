@@ -22,7 +22,7 @@ const updateAddToCartProduct = require('../controller/user/updateAddToCartProduc
 const deleteAddToCartProduct = require('../controller/user/deleteAddToCartProduct')
 const searchProduct = require('../controller/product/searchProduct')
 const filterProductController = require('../controller/product/filterProduct')
-
+const { createCheckoutSession } = require('../controller/payment/createCheckoutSession');
 
 
 router.post("/signup",userSignUpController)
@@ -51,10 +51,8 @@ router.get("/view-card-product",authToken,addToCartViewProduct)
 router.post("/update-cart-product",authToken,updateAddToCartProduct)
 router.post("/delete-cart-product",authToken,deleteAddToCartProduct)
 
-
-
-
-
-
+// Stripe Payment
+console.log({createCheckoutSession});
+router.post('/create-checkout-session', createCheckoutSession);
 
 module.exports = router
