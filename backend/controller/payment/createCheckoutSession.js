@@ -10,7 +10,7 @@ const createCheckoutSession = async (req, res) => {
       line_items: [
         {
           price_data: {
-            currency: 'inr', // or 'usd', depending on your currency
+            currency: 'pkr', // or 'usd', depending on your currency
             product_data: {
               name: 'Cart Total',
               description: 'Total products in cart',
